@@ -11,12 +11,13 @@ RUN apt-get install -y curl vim
 # Chris: I'm adding this to debug
 RUN apt-get -y install sudo
 
-RUN mkdir /app/data
+RUN mkdir -p /app/data
 RUN chmod -R 777 /app/data
 
 # Chris: just testing something with version 0.6.1 - broke artifactory so will just use local builds for now. What could go wrong?
 # Patrick: updating the version to 0.6.2 per the modified source. The jar is placed in releases directory.
-COPY releases/paymentservicejava-0.6.2.jar /app/paymentservice.jar
+# Aless: updating the version to 0.6.3 to support JSON STDOUT logging. The jar is placed in releases directory.
+COPY releases/paymentservicejava-0.6.3.jar /app/paymentservice.jar
 
 WORKDIR /app
 RUN wget -O dd-java-agent.jar https://dtdg.co/latest-java-tracer

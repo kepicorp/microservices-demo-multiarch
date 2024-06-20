@@ -16,7 +16,7 @@ kind: Deployment
 metadata:
   name: loadgenerator
   labels:
-      tags.datadoghq.com/env: "infosys-test-1"
+      tags.datadoghq.com/env: "dash2024"
       tags.datadoghq.com/service: "loadgenerator"
       tags.datadoghq.com/version: "1.0"
 spec:

@@ -35,7 +35,7 @@ datadog:
   # logLevel: info
   ## Set global tags
   tags:
-    - env: infosys-test-1
+    - env: dash2024
 
   ## Enable Log collections
   logs:
@@ -88,7 +88,7 @@ datadog:
           fieldPath: status.hostIP
   # Enable data to be sent with invalid certs (required for kind cluster)
     tlsVerify: false
-  clusterName: infosys-test-1
+  clusterName: dash2024
 
   ## Set up global environment for agent and pods communication
   env:

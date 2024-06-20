@@ -51,13 +51,13 @@
         })(window,document,'script','https://www.datadoghq-browser-agent.com/us1/v5/datadog-rum.js','DD_RUM')
         window.DD_RUM.onReady(function() {
           window.DD_RUM.init({
-            clientToken: 'pub77bae0430f8671d2b626b138d2b93052',
-            applicationId: 'e1545e23-42e9-4da5-927b-22ab2766fd4d',
+            clientToken: 'RUM_CLIENT_TOKEN',
+            applicationId: 'RUM_APP_ID',
             // `site` refers to the Datadog site parameter of your organization
             // see https://docs.datadoghq.com/getting_started/site/
             site: 'datadoghq.com',
-            service: 'swagstore-nohoon',
-            env: 'nohoon-dev',
+            service: 'swagstore',
+            env: 'dash2024',
             // Specify a version number to identify the deployed version of your application in Datadog
             // version: '1.0.0', 
             sessionSampleRate: 100,

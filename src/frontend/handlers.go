@@ -75,7 +75,7 @@ func (fe *frontendServer) homeHandler(w http.ResponseWriter, r *http.Request) {
 	// introducing a random delay for AIOps - Faulty Deployment RCA
 	// TODO: Make this into a feature flag later
 	// 
-	time.Sleep(time.Duration(rand.Int31n(30)) * time.Second);
+	// time.Sleep(time.Duration(rand.Int31n(30)) * time.Second); -- commented out for now - not needed for DASH 2024
 
 	type productView struct {
 		Item  *pb.Product

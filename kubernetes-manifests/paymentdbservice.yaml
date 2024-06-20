@@ -4,7 +4,7 @@ metadata:
   name: paymentdbservice
   labels:
     name: mysql
-    tags.datadoghq.com/env: "infosys-test-1"
+    tags.datadoghq.com/env: "dash2024"
     tags.datadoghq.com/service: "paymentdbservice"
     tags.datadoghq.com/version: "0.5.0"
 spec: # specification for deployment resource
@@ -18,7 +18,7 @@ spec: # specification for deployment resource
       labels:
         app: paymentdbservice # service will look for this label
         name: paymentdbservice
-        tags.datadoghq.com/env: "infosys-test-1"
+        tags.datadoghq.com/env: "dash2024"
         tags.datadoghq.com/service: "paymentdbservice"
         tags.datadoghq.com/version: "0.5.0"
       annotations:
